@@ -1,25 +1,32 @@
 # yolov4_4c
 
-- annotationreformat:
+1. annotationreformat:
 Script make the division for train and test folders required for training at darknet yolo
 
 `<path-to-train-dataset-lwir-visible>` -> KAIST 
+
 `<path-to-test-dataset-lwir-visible>` -> KAIST
-4c->	0 for 3 channel
-	1 for 4 channel
-augment->	0 for without data augmentation
-		1  with data augmentation
+
+4c->
+-    0 for 3 channel
+
+-	1 for 4 channel
+
+augment->	
+- 0 for without data augmentation
+		
+- 1  with data augmentation
 		
 
-- fourchannel:
+2. fourchannel:
 Script that takes result json from yolov4_4c detection* and create a video of double width resolution where left side is RGB and right side is pseudocolor LWIR.
 
 
-- savevideo:
+3. savevideo:
 Script that creates groundtruth tag video and video without tags 
 
 	
-- mosaic:
+4. mosaic:
 Alternate way of creating mosaic data augmentation technique. Is recomended to use Darknet YOLOv4 mosaic flag
 
 #USAGE
