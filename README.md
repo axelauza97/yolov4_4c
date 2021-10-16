@@ -29,7 +29,7 @@ Script that creates groundtruth tag video and video without tags
 4. mosaic:
 Alternate way of creating mosaic data augmentation technique. Is recomended to use Darknet YOLOv4 mosaic flag
 
-#USAGE
+# USAGE
 python3 annotationreformat.py --train=`<path-to-train-xml-annotation>` --test=`<path-to-test-xml-annotation> --in=<path-to-train-dataset> --out=<path-store-yolo-folders-test-train-img-txt>` --n_tr_set=`<train-set-#>` --n_te_set=`<test-set-#>` --4c=`<bool>` --augment=`<bool>`
 
 
@@ -56,5 +56,5 @@ python3 mosaic.py /home/axelauza/Descargas/FIRMEZA/SENSITIVO1711_2/corteRgb/Aran
 *darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output -dont_show -out result.json < data/train.txt
 
 
-#Demostration Videos
+# Demostration Videos
 - https://espolec-my.sharepoint.com/:f:/g/personal/aaauza_espol_edu_ec/Euo_yn7kqzRIvx6rC3q8DSgBafi1SaPn_xtyZPWVufGAWg
