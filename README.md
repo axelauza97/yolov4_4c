@@ -36,10 +36,10 @@ python3 annotationreformat.py --train=`<path-to-train-xml-annotation>` --test=`<
 python fourchannel.py <detection-json-from-darknetyolo> <csv-path-to-images> 
 
 
-python3 savevideo.py Documentos/MI/RGBC/test/test.csv
+python3 savevideo.py `<path-to-test-csv>`
 
 
-#EXAMPLE
+# EXAMPLE
 python3 annotationreformat.py --train=/home/axelauza/annotations-xml/set03 --test=/home/axelauza/annotations-xml/set09 --in=/home/axelauza/Documentos/MI/dataset --out=/home/axelauza/Documentos/MI/tes --n_tr_set=set03 --n_te_set=set09 --4c=0 --augment=1
 
 
